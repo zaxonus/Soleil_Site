@@ -1,0 +1,27 @@
+
+# Building of a first vite/react project : soleil.
+  ===============================================
+
+ % npm create vite@latest
+
+ % cd soleil
+ % npm install tailwindcss @tailwindcss/vite
+
+ % npm i parse
+ % npm i -D @types/parse
+ % npm i events
+ % npm i -D @types/events
+ % npm i react-router-dom
+
+Important note, the line below should appear at the top of index.css for tailwind (colors) to work properly :
+@import "tailwindcss";
+
+
+......................
+
+
+App ID: CEkpc2RsLCNMHMcjBgNHpnnibNPDXDz5yRJlYwce ( key ??)
+
+JavaScript key: bdqfn5TkbGz4xV5DOfVLLHXIpzgYHn7AsON8kUJw
+
+Client Key: 8RripfYLjo9g5rjpk7b4LtCLjeGEZWRzBvAvaBgd
