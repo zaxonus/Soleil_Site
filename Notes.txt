@@ -12,12 +12,13 @@
  % npm i events
  % npm i -D @types/events
  % npm i react-router-dom
+ % npm i -D gh-pages
 
 Important note, the line below should appear at the top of index.css for tailwind (colors) to work properly :
 @import "tailwindcss";
 
 
-......................
+............................................
 
 
 App ID: CEkpc2RsLCNMHMcjBgNHpnnibNPDXDz5yRJlYwce ( key ??)
