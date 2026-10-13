@@ -1,5 +1,6 @@
 // import { truncate } from 'fs/promises';
-import React, {ChangeEvent} from 'react';
+import React/*, {ChangeEvent}*/ from 'react';
+import type {ChangeEvent} from 'react';
 
 
 function InputField({fieldID,fieldIntro,fieldVal,fieldChgCbkFn,

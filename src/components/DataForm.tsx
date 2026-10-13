@@ -1,10 +1,11 @@
-import React, {useState,useEffect,ChangeEvent, FormEvent } from 'react';
+import /*React,*/ {useState,useEffect/*,ChangeEvent, FormEvent*/ } from 'react';
+import type {ChangeEvent,FormEvent} from 'react';
 import Parse from 'parse';
 import {styles} from './styles';
 import InputField from './InputField';
 // import AwsmBtn from './AwsmBtn';
 import LogoutBtn from './LogoutBtn';
-import type {LangLevel,FormData} from './types';
+import type {/*LangLevel,*/FormData} from './types';
 
 // Initialize Parse :
 Parse.initialize("i3tzTVEHYEb1EjCo1cyNzHQNz3Ft0oyHX0gjmzD2",
@@ -31,9 +32,9 @@ function DataForm({cbkFn,data=null}:{cbkFn?:()=>void,data?:FormData|null}) {
   });
   
   const [user,setUser] = useState<Parse.User|null>(null),
-        [loading,setLoading] = useState<boolean>(false),
+        [loading,setLoading] = useState<boolean>(false)//,
         // [statusMsg,setStatusMsg] = useState<string>(''),
-        [langProtocol,setLangProtocol] = useState<LangLevel>('Neutral')
+        // [langProtocol,setLangProtocol] = useState<LangLevel>('Neutral')
 
   useEffect(() => {
     const currentUser = Parse.User.current();
@@ -78,7 +79,7 @@ function DataForm({cbkFn,data=null}:{cbkFn?:()=>void,data?:FormData|null}) {
       ...prevState,
       [name]: value
     }));
-  };
+  } /* End of handleChange */
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
@@ -137,7 +138,7 @@ function DataForm({cbkFn,data=null}:{cbkFn?:()=>void,data?:FormData|null}) {
         url: '', 
         // jpnTrans: '' 
       });
-      setLangProtocol('Neutral');
+      // setLangProtocol('Neutral');
     } catch (error) {
       if (error instanceof Parse.Error && error.code === Parse.Error.DUPLICATE_VALUE) {
         setStatus({
@@ -162,10 +163,10 @@ function DataForm({cbkFn,data=null}:{cbkFn?:()=>void,data?:FormData|null}) {
 
 
     return;
-  };
+  } /* End of handleSubmit */
 
 
-  const swapLangProtocol = (protocol:LangLevel) => {
+  /*const swapLangProtocol = (protocol:LangLevel) => {
     setLangProtocol(langProtocol==protocol?'Neutral':protocol)
   } /* End of swapLangProtocol */
 

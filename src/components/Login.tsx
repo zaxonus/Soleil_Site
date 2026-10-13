@@ -1,8 +1,9 @@
-import {useState,ChangeEvent} from 'react';
+import {useState/*,ChangeEvent*/} from 'react';
+import type {ChangeEvent} from 'react';
 import Parse from 'parse';
 import {styles} from './styles';
 import InputField from './InputField';
-import { isTypeOfExpression } from 'typescript';
+// import { isTypeOfExpression } from 'typescript';
 
 
 // const Login: React.FC = () => {

@@ -1,4 +1,5 @@
 import {styles} from './styles';
+import Parse from 'parse';
 
 function LogoutBtn({cbkFn}:{cbkFn?:()=>void}) {
   return (

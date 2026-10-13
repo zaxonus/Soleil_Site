@@ -1,13 +1,14 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import {Routes,Route} from 'react-router-dom';
 import Parse from "parse"
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+// import heroImg from './assets/hero.png'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
 import './App.css'
-import LinkButton from './components/LinkButton'
+// import LinkButton from './components/LinkButton'
 import URL_List from './components/URL_List'
 import URL_Input from './components/URL_Input'
+import List_Fix from './components/List_Fix'
 import SignUp from './components/SignUp'
 
 
@@ -18,7 +19,7 @@ Parse.serverURL = "https://parseapi.back4app.com/";
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   /*return (
     <>
@@ -30,6 +31,7 @@ function App() {
     <Routes>
       <Route path="/" element={<URL_List/>} />
       <Route path="/Input" element={<URL_Input/>} />
+      <Route path="/ListFix" element={<List_Fix/>} />
       <Route path="/SignUp" element={<SignUp/>} />
     </Routes>
   );

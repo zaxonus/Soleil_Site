@@ -3,10 +3,10 @@ import type {ChangeEvent} from 'react';
 import Parse from 'parse';
 import {styles} from './styles';
 import InputField from './InputField';
-import { isTypeOfExpression } from 'typescript';
+// import { isTypeOfExpression } from 'typescript';
 
 
-function SignUp({cbkFn}:{cbkFn?:(u:any)=>void}) {
+function SignUp(/*{cbkFn}:{cbkFn?:(u:any)=>void}*/) {
   const [usrNam,setUsrNam] = useState<string>(''),
         [psWrd,setPsWrd] = useState<string>(''),
         [eMail,setEMail] = useState<string>(''),

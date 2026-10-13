@@ -1,4 +1,5 @@
-import React, {useState,useEffect,ChangeEvent, FormEvent } from 'react';
+import /*React,*/ {useState,useEffect/*,ChangeEvent, FormEvent*/ } from 'react';
+// import type {ChangeEvent,FormEvent} from 'react';
 import {styles} from './styles';
 import Parse from 'parse';
 import Login from './Login';
@@ -10,7 +11,7 @@ function URL_Input({cnclFn=null}:{
 }) {
 	const [user,setUser] = useState<Parse.User|null>(null),
 				[ticFlag,setTicFlag] = useState<boolean>(false),
-				[statusMsg,setStatusMsg] = useState<string>(''),
+				// [statusMsg,setStatusMsg] = useState<string>(''),
         cnclAtrb = 'bg-amber-600 text-lime-100 font-serif \
                     text-2xl font-normal m-3 px-2 py-3 \
                     border-2 border-yellow-800 rounded-lg'
